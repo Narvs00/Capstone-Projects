@@ -1,0 +1,212 @@
+:root{
+    --pink: #f69bd3;
+    --secondary-color: #a6a6a6;
+}
+
+*{
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.navbar li{
+    margin: 10px 45px 45px 45px;
+}
+.navbar a{
+    text-decoration: none;
+
+}
+ul a:hover{
+    color: var(--pink);
+    
+}
+li #resume{
+    background-color: black;
+    border: 2px solid var(--pink);
+    padding: 8px;
+    color: var(--pink);
+}
+li #resume:hover{
+    background-color: var(--pink);
+    color: black;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.bg-image img{
+    height: 700px;
+    margin-bottom: 150px;
+}
+.con-text{
+    margin-left: 70px;
+    margin-bottom: 150px;
+    
+}
+.con-text h1{
+    color: var(--pink);
+    font-size: 70px;
+    margin: 0;
+}
+.con-text h3{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+}
+.con-text p{    
+    color: var(--secondary-color);
+    margin-top: 50px;
+    font-size: 19px;
+    width: 650px;
+}
+.mySkillsPage{
+    color: var(--pink);
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: black;
+    }
+.skills-Title{
+    color: var(--pink);
+    margin-top: 150px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 120vh;
+}
+.skills img{
+    height: 70px;
+    margin-top: 120px;
+    padding: 30px;
+}
+.skill{
+    margin-top: 100px;
+    text-align: center;
+}
+.tools{
+    margin-top: 150px;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: center;
+}
+.tools-title{
+    color: var(--pink);
+}
+.line{
+    border-top: 3px dotted var(--pink);
+    margin-top: 150px;
+}
+
+.skill h2{
+    color: var(--pink);
+    margin-top: 100px;
+}
+
+.skill button{
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid var(--pink);
+    padding: 8px;
+    color: var(--pink);
+    border-radius: 10px;
+    font-size: 15px;
+}
+.skill .contactMe :hover{
+    background-color: var(--pink);
+    color: black;
+}
+
+.skill a{
+    color: var(--pink);
+    text-decoration: none;
+}
+.footer{
+    height: 150px;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    color: #d357a4;
+    font-size: 20px;
+    padding-left: 30px;
+    height: 50px;
+}
+.copyright{
+    background-color: var(--pink);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+@media (max-width: 1439){
+    .bg-image img{
+        height: 100px;
+    }
+    .con-text h3{
+        font-size: 30px;
+    }
+    .con-text h1{
+        font-size: 10px;
+    }
+    .skill h2{
+        color: white;
+    }
+}
+
+@media (max-width: 900px)  {
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+    .bg-image img{
+        height: 500px;
+        margin: 0;
+    }
+    .con-text h3{
+        font-size: 20px;
+        width: 350px;
+        margin-left: 80px;
+        text-align:center;
+    }
+    .con-text h1{
+        width: 500px;
+        font-size: 50px;
+    }
+    .con-text p{
+        width: 550px;
+        text-align: justify;
+    }
+    .skills{
+        height: 1500px;
+    }
+    .skill{
+        width: 550px;
+    }
+    .skill img{
+        height: 65px;        
+    }
+    .line{
+        width: 550px;
+    }  
+}
